@@ -13,7 +13,7 @@ www.timknapen.be
  
  It has been tested to work very smoothly on 
  Macbook (13-inch, Aluminum, Late 2008) / 2 GHz Intel Core 2 Duo / 8 GB 1333 MHz DDR3 / NVIDIA GeForce 9400M 256 MB
- Mac Mini (2013) / 2,5-GHz dual-core Intel Core i5 / 4 GB (2x 2 GB) 1600-MHz DDR3-geheugen / Intel HD Graphics 4000
+ Mac Mini (2013) / 2,5-GHz dual-core Intel Core i5 / 4 GB (2x 2 GB) 1600-MHz DDR3/ Intel HD Graphics 4000
  on a 2560 x 1400 pixels display
  
  The image used to test is 20.000 × 15.000 pixels ( = 300.000.000 pixels :-)
