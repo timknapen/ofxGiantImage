@@ -4,8 +4,9 @@ ofxGiantImage is an addon for openframeworks used to draw giant, large, huge ima
 
 
 Created by Tim Knapen on 15/03/13.
-www.timknapen.be
+Updated example to work with with OF 0.8.1 on 14/07/14
 
+www.timknapen.be
 
  
  This loads and displays huge images.
@@ -17,7 +18,7 @@ www.timknapen.be
  on a 2560 x 1400 pixels display
  
  The image used to test is 20.000 × 15.000 pixels ( = 300.000.000 pixels :-)
- Tests were done with OF0062 and OF007.
+ Tests were done with OF0062, OF007 and OF 0.8.1
  
  NOTES:
  1. Loading an image of this size will take a while, but don't worry, once it is loaded, the app runs smoothly.
