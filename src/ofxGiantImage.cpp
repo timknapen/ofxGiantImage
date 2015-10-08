@@ -38,7 +38,7 @@ void ofxGiantImage::loadImage(string filePath){
         cout << "I couldn't load the image from path: "<<filePath<<endl;
         return;
     }
-    if(!img->type == OF_IMAGE_COLOR){
+    if(!(img->type == OF_IMAGE_COLOR)){
         cout << "WARNING the ofxTile can only display 3 channel color images now! "<<endl;
         return;
     }
