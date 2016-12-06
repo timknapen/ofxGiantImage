@@ -51,7 +51,7 @@ void ofxGiantImage::loadImage(string filePath){
     
     // in the special and stupid case that you load a source image that is smaller than the size of a tile just use the source image.
     if( width < tileSize ||  height < tileSize){
-        unsigned char * imgpix = img->getPixels();
+        // unsigned char * imgpix = img->getPixels();
         unsigned char tilepix[3*(int)img->getWidth()*(int)img->getHeight()];
         ofTexture * tile = new ofTexture();
         tile->allocate(img->getWidth(), img->getHeight(), GL_RGB);
@@ -72,8 +72,6 @@ void ofxGiantImage::loadImage(string filePath){
             
             int x1 = tileSize * x;
             int y1 = tileSize * y;
-            //x1 = MIN(width - tileSize, x1);     // HACK -- this way the tiles on the far right edge stay within the bounds..
-            //y1 = MIN(height - tileSize, y1);    // HACK
             int tileWidth = MIN(tileSize, width - x1); // only necessary for the tiles on the far right
             int tileHeight = MIN(tileSize, height - y1); // only necessary for the tiles on the bottom row
             ofTexture * tile = new ofTexture();
@@ -122,7 +120,6 @@ void ofxGiantImage::draw(float x, float y, float w, float h){
     
     ofPushMatrix();
     ofTranslate( - x,  -y);
-    //ofScale(ofGetWidth()/width, ofGetWidth()/width);
     for(int ix = x0 ; ix < maxix; ix ++ ){
         for(int iy = y0 ; iy < maxiy; iy++){
             tiles[ ix + (iy * wtiles)]->draw( ix * tileSize, iy * tileSize);
